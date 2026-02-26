@@ -1,10 +1,10 @@
 ---
-name: opensubtitles-readonly
-description: Read-only OpenSubtitles skill to search and download subtitles via API, then extract scene context by timestamp to avoid spoilers. Use when the user asks “what’s happening at this timestamp” or needs subtitle context; pairs well with Trakt for playback progress. Requires an OpenSubtitles API key and User-Agent.
+name: opensubtitles
+description: OpenSubtitles skill to search and download subtitles via API, then extract scene context by timestamp to answer user questions regarding a show in context and avoid spoilers. Use when the user asks “what’s happening at this timestamp” or needs subtitle context; pairs well with Trakt for playback progress. Requires an OpenSubtitles API key and User-Agent.
 metadata: {"openclaw":{"requires":{"env":["OPENSUBTITLES_API_KEY","OPENSUBTITLES_USER_AGENT"],"bins":["curl","jq","awk"]},"primaryEnv":"OPENSUBTITLES_API_KEY","emoji":"📝"}}
 ---
 
-# OpenSubtitles (Read-only)
+# OpenSubtitles
 
 Use this skill to fetch subtitle context around a timestamp. This is **read‑only**: no uploads or modifications.
 
